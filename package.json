@@ -1,0 +1,24 @@
+{
+  "name": "my-personal-site",
+  "version": "1.0.0",
+  "description": "My personal WebPage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianunlam/my-personal-site.git"
+  },
+  "keywords": [
+    "website",
+    "react",
+    "node"
+  ],
+  "author": "Brian Alonso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brianunlam/my-personal-site/issues"
+  },
+  "homepage": "https://github.com/brianunlam/my-personal-site#readme"
+}
