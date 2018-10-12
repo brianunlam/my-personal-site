@@ -15,8 +15,8 @@ Sections
 
 Dependencies
 ------------
-⋅⋅* React
-⋅⋅* Redux
-⋅⋅* Node
-⋅⋅* Express
-⋅⋅* Bulma.js
+* React
+* Redux
+* Node
+* Express
+* Bulma.js
