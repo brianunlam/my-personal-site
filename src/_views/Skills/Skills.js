@@ -48,11 +48,7 @@ class Skills extends Component {
   render() {
 
     let renderSkills = skills.map(skill => (
-<<<<<<< HEAD
-      <div className="tile is-child has-text-center">
-=======
       <div key={skill.name} className="tile is-child has-text-center">
->>>>>>> progress-transition
         <Skill name={skill.name} percentage={skill.percentage} />  
       </div>
     ))

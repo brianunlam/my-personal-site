@@ -15,11 +15,7 @@ class TopNavbar extends Component {
     </div>
     
      <span className="navbar-item is-size-5 has-text-white-ter is-italic has-text-weight-bold">Brian Alonso</span>
-<<<<<<< HEAD
-               <span class="navbar-burger burger" data-target="navbarMenuHeroC">
-=======
                <span className="navbar-burger burger" data-target="navbarMenuHeroC">
->>>>>>> progress-transition
             <span></span>
             <span></span>
             <span></span>
