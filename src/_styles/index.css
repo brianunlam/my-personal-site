@@ -1,0 +1,28 @@
+
+/* start styles for navbar */
+
+
+.tabs.is-boxed a {
+    color: white;
+    
+   
+}
+
+
+.tabs.is-boxed a:hover {
+    background-color: #383838 !important;
+    color: white;
+    border-bottom-color: #383838 !important;
+}
+
+a.navbar-item.is-active:hover, a.navbar-item.is-active, .navbar-link.is-active:hover, .navbar-link.is-active {
+    background-color: #fafafa !important;
+    color: black !important;
+}
+
+
+progress {
+    
+    transition : width 5s ease;
+}
+/* end styles for navbar */

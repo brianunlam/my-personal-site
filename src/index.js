@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './_styles/index.css';
+import { App } from './_views/App';
+import './_styles/_bulma_variables.sass'
+
+//import 'bulma/css/bulma.css'
+
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));

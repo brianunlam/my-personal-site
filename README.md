@@ -13,7 +13,7 @@ Sections
 * **About** ↔ ↕ ⤡
 * **Testimonials** 👌
 
-Dependencies
+Dependenciesnpm install 
 ------------
 * React
 * Redux
