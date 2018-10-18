@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //import styles from '../../_styles/_bulma_variables.sass'
-
-
+import HuaweiImg from '../../_images/huawei.svg'
+import ArsatImg from '../../_images/arsat.png'
 class WorkExperience extends Component {
   
   
@@ -20,73 +20,52 @@ class WorkExperience extends Component {
      return (
       <div>
         <p className="title">Work Experience</p>
-          <p className="subtitle">Withd an image</p>
-          
         <article className="media">
-  <figure className="media-left">
-    <p className="image is-64x64">
-      <img src="https://image.flaticon.com/icons/svg/882/882738.svg" />
-    </p>
-  </figure>
-  <div className="media-content">
-    <div className="content">
-      <p>
-        <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
-        <br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      </p>
-    </div>
-    <nav className="level is-mobile">
-      <div className="level-left">
-        <a className="level-item">
-          <span className="icon is-small"><i className="fas fa-reply"></i></span>
-        </a>
-        <a className="level-item">
-          <span className="icon is-small"><i className="fas fa-retweet"></i></span>
-        </a>
-        <a className="level-item">
-          <span className="icon is-small"><i className="fas fa-heart"></i></span>
-        </a>
-      </div>
-    </nav>
-  </div>
-  <div className="media-right">
-    <button className="delete"></button>
-  </div>
-</article>
-<article className="media">
-  <figure className="media-left">
-    <p className="image is-64x64">
-      <img src="https://lh3.googleusercontent.com/-HPFUzGWPe6X0bZj4-UgBSFB0Tm2jtwTFwVl35uFf3UA6ZnNUf6x7291g4rlrvfbDw=s180-rw" />
-    </p>
-  </figure>
-  <div className="media-content">
-    <div className="content">
-      <p>
-        <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
-        <br />
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-      </p>
-    </div>
-    <nav className="level is-mobile">
-      <div className="level-left">
-        <a className="level-item">
-          <span className="icon is-small"><i className="fas fa-reply"></i></span>
-        </a>
-        <a className="level-item">
-          <span className="icon is-small"><i className="fas fa-retweet"></i></span>
-        </a>
-        <a className="level-item">
-          <span className="icon is-small"><i className="fas fa-heart"></i></span>
-        </a>
-      </div>
-    </nav>
-  </div>
-  <div className="media-right">
-    <button className="delete"></button>
-  </div>
-</article>
-      </div>
+          <figure className="media-left">
+            <p className="image is-64x64">
+              <img src={ArsatImg} />
+            </p>
+          </figure>
+          <div className="media-content">
+            <div className="content is-small">
+              <p className="title is-5">
+                Arsat
+              </p>
+              <p className="subtitle is-6" style={{marginBottom: "1px"}}>
+                Software Developer
+              </p>
+              <p className="is-small">
+                Web Application Development, for monitoring and controlling Telecommunications networks. 
+                Script programming to collect information in Networks using SNMP, XML, TMF814 and custom tools. 
+                Software design. 
+                Server Admin and Infrastructure (Ubuntu, RedHat, Docker) 
+                Technical Support Level 3 DWDM (Ciena, Alcatel, Huawei, ZTE)
+              </p>
+            </div>
+          </div>
+        </article>
+        <article className="media">
+          <figure className="media-left">
+            <p className="image is-64x64">
+              <img src={HuaweiImg} />
+            </p>
+          </figure>
+          <div className="media-content">
+            <div className="content is-small">
+              <p className="title is-5">
+                Huawei Technologies
+              </p>
+              <p className="subtitle is-6" style={{marginBottom: "1px"}}>
+                Optical Engineer
+              </p>
+              <p className="is-small">
+                Technical Support in Optical Networks: SDH, DWDM, PTN, MicroWave. 
+                Development of applications to test equipment commissioning
+              </p>
+            </div>
+          </div>
+        </article>
+       </div>
      )
      
     
