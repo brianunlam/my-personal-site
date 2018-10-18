@@ -2,9 +2,29 @@ import React, { Component } from 'react';
 
 //import styles from '../../_styles/_bulma_variables.sass'
 import { Skills } from '../Skills'
-
-
+import { FadeOut } from '../../_components/_Fade'
+import { Presentation } from '../Presentation'
+import { Technologies } from '../Technologies'
+import { WorkExperience } from '../WorkExperience'
 class AboutMe extends Component {
+  
+  constructor(props){
+    super(props)
+    this.state = {
+      fade: false
+    }
+    
+  }
+  
+  componentDidMount() {
+  console.log(this.state.fade)
+  if (!this.state.fade) {
+    this.setState({
+        fade: true
+      })
+  }
+}
+  
   render() {
     return (
       <div className="container">  
@@ -13,36 +33,21 @@ class AboutMe extends Component {
   <div className="tile is-vertical is-10">
     <div className="tile">
       <div className="tile is-parent is-vertical">
-        <article className="tile is-child notification is-dark">
-        <nav className="level">
-          <div className="level-item has-text-centered">
-            <figure className="image is-128x128 has-text-centered">
-       <img className="is-rounded" alt="me" src="https://media.licdn.com/dms/image/C4E03AQHEL1QH1ryfBQ/profile-displayphoto-shrink_100_100/0?e=1544659200&v=beta&t=hE-mej85Ea3xuEXf3M3eu42rKnn-z8ydf3nq95ansi4" />
-    </figure>
-           
-          </div>
-        </nav>
-      
-      <div className="media-content has-text-centered">
-        <p className="title is-1">Hi! I'm Brian!</p>
-        <p className="subtitle is-6">I'm a Software Engineer and fullstack Web Developer with a great background in Telecommunications.</p>
-        I love designing, building, coding and implement software.
-      I work with javascript, nodejs and ReactJs.
-      </div>
-        
+     
+        <article className="tile is-child box is-dark">
+        <FadeOut in={this.state.fade}>
+          <Presentation />
+        </FadeOut>
         </article>
-        <article className="tile is-child notification is-dark">
-          <p className="title">...tiles</p>
-          <p className="subtitle">Bottom tile</p>
-        </article>
+        <Technologies />  
       </div>
       <div className="tile is-parent">
-        <article className="tile is-child notification is-dark">
-          <p className="title">Middle tile</p>
-          <p className="subtitle">With an image</p>
-          <figure className="image is-4by3">
-            <img alt="not important" src="https://bulma.io/images/placeholders/640x480.png"/>
-          </figure>
+        <article className="tile is-child box is-dark">
+               <FadeOut in={this.state.fade}>
+        <WorkExperience /> 
+       
+         
+      </FadeOut>
         </article>
       </div>
     </div>
