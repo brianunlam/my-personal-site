@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //import styles from '../../_styles/_bulma_variables.sass'
-
+import { UbuntuIcon } from '../../_components/_UbuntuIcon'
 
 let technologies = [
  "react","node", "js-square", "docker", "linux", "git","html5","css3-alt","sass"
@@ -42,6 +42,9 @@ class Technologies extends Component {
     <article className="tile is-child box is-dark">
       <nav className="columns is-mobile is-multiline">
         { renderTechnologies }
+        <div className="column is-mobile has-text-centered">
+            <UbuntuIcon />
+        </div>
       </nav>   
     </article>
     );
