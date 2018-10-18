@@ -27,27 +27,25 @@ class AboutMe extends Component {
   
   render() {
     return (
-      <div className="container">  
+      <div className="container" >  
 
     <div className="tile is-ancestor">
   <div className="tile is-vertical is-10">
     <div className="tile">
       <div className="tile is-parent is-vertical">
      
-        <article className="tile is-child box is-dark">
-        <FadeOut in={this.state.fade}>
+        <article className="tile is-child box is-dark" style={{overflow: "hidden"}}>
           <Presentation />
-        </FadeOut>
+        
         </article>
         <Technologies />  
       </div>
       <div className="tile is-parent">
-        <article className="tile is-child box is-dark">
-               <FadeOut in={this.state.fade}>
+        <article className="tile is-child box is-dark fadeIn">
         <WorkExperience /> 
        
          
-      </FadeOut>
+      
         </article>
       </div>
     </div>
@@ -61,7 +59,7 @@ class AboutMe extends Component {
       </article>
     </div>
   </div>
-  <div className="tile is-parent is-2">
+  <div className="tile is-parent is-2 fadeIn">
            <Skills />
   </div>
 </div>

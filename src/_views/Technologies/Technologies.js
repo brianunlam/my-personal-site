@@ -25,7 +25,7 @@ class Technologies extends Component {
      
      return (
       
-      <div className="column is-mobile has-text-centered">
+      <div className="column is-mobile has-text-centered fadeIn">
         <FontAwesomeIcon spin={spin} size="3x" icon={['fab', tech]} color="white" />
       </div>
       
