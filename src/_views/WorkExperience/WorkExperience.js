@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 //import styles from '../../_styles/_bulma_variables.sass'
 import HuaweiImg from '../../_images/huawei.svg'
 import ArsatImg from '../../_images/arsat.png'
+
 class WorkExperience extends Component {
   
   
@@ -20,10 +21,12 @@ class WorkExperience extends Component {
      return (
       <div>
         <p className="title">Work Experience</p>
-        <article className="media">
+        <article className="media scale">
           <figure className="media-left">
             <p className="image is-64x64">
+              
               <img src={ArsatImg} />
+              
             </p>
           </figure>
           <div className="media-content">
@@ -44,7 +47,7 @@ class WorkExperience extends Component {
             </div>
           </div>
         </article>
-        <article className="media">
+        <article className="media scale">
           <figure className="media-left">
             <p className="image is-64x64">
               <img src={HuaweiImg} />

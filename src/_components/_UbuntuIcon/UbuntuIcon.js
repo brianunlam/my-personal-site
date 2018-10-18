@@ -5,7 +5,7 @@ class UbuntuIcon extends Component {
   render() {
     //console.log(styles)
     return (
-     <svg width="60" height="48">
+     <svg width="50" height="48">
       <g id="Ubuntu" transform="scale(2)">
         <g data-name="&lt;Group&gt;" id="_Group_">
           <circle cx="2.5" cy="12" data-name="&lt;Path&gt;" id="_Path_" r="2" style={{ fill:"white", stroke: "white","stroke-linejoin":"round"}}/> 

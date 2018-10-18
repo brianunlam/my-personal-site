@@ -27,26 +27,33 @@ progress {
 }
 /* end styles for navbar */
 
+
+/* animations */
+
 .fadeIn {
-    animation: fadeIn 2s ease-in;
+    animation: fadeIn 3s ease-in-out;
 }
 
 
 .moveInLeft {
     
-    animation: moveInLeft 1s ease-out;
+    animation: moveInLeft 1.2s ease-in-out;
     
 }
 .moveInRight {
     
-    animation: moveInRight 1s ease-out;
+    animation: moveInRight 1.2s ease-in-out;
     
+}
+
+.moveInDown {
+    animation: moveInDown 1.2s ease-in-out;
 }
 
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-12%);
+        transform: translateX(-8%);
     }
     80% {
         opacity:0.5;
@@ -61,17 +68,35 @@ progress {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(12%);
+        transform: translateX(8%);
     }
     80% {
         opacity:0.5;
-        transform: translateX(-1%);
+        transform: translateX(-2%);
     }
     100%{
         opacity: 1;
         transform: translate(0);
     }
 }
+
+@keyframes moveInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+    80% {
+        opacity:0.5;
+        transform: translateY(2%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 
 @keyframes fadeIn {
     0% {
@@ -86,3 +111,13 @@ progress {
     
     }
 }
+
+.scale:hover {
+    transform: scale(1.01);
+}
+
+.scale2x:hover {
+    transform: scale(1.1);
+}
+
+/* end animations */

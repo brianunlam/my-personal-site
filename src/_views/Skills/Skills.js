@@ -48,7 +48,7 @@ class Skills extends Component {
   render() {
 
     let renderSkills = skills.map(skill => (
-      <div key={skill.name} className="tile is-child has-text-center">
+      <div key={skill.name} className="tile is-child has-text-center scale2x">
         <Skill name={skill.name} percentage={skill.percentage} />  
       </div>
     ))

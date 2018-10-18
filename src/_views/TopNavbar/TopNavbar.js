@@ -30,7 +30,7 @@ class TopNavbar extends Component {
         <div className="field is-grouped">
           <p className="control">
             <a className="button is-dark" data-social-network="Linkedin"  data-social-target="https://www.linkedin.com/in/brian-alonso-95371259" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/brian-alonso-95371259">
-              <span className="icon">
+              <span className="icon scale2x">
               
                 <FontAwesomeIcon icon={['fab',"linkedin"]} />
               </span>
@@ -38,7 +38,7 @@ class TopNavbar extends Component {
           </p>
           <p className="control">
             <a className="button is-dark" target="_blank" rel="noopener noreferrer" href="https://github.com/brianunlam">
-              <span className="icon">
+              <span className="icon scale2x">
                  <FontAwesomeIcon icon={['fab',"github"]} />
               </span>
              
